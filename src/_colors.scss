@@ -98,16 +98,25 @@ $colors : (
   .text-#{$label} {
     color: #{$color};
   }
+  .hover-text-#{$label}:hover {
+    color: #{$color};
+  }
 }
 
 @each $label, $color in $colors {
   .bg-#{$label} {
     background-color: #{$color};
   }
+  .hover-bg-#{$label}:hover {
+    background-color: #{$color};
+  }
 }
 
 @each $label, $color in $colors {
   .bc-#{$label} {
+    border-color: #{$color};
+  }
+  .hover-bc-#{$label}:hover {
     border-color: #{$color};
   }
 }
